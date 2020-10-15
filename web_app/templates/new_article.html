@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Articles</title>
+    <title>create_article</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
@@ -21,15 +21,19 @@
                     <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
                 </ul>
                 <form class="form-inline mr-auto" target="_self">
-                    <div class="form-group"><label for="search-field"></label></div>
-                </form><i class="fa fa-search"></i><input type="search" id="search-field" class="search-field" name="search"><a class="btn btn-light action-button" role="button" href="#">Search</a></div>
+                    <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" id="search-field" name="search"></div>
+                </form><a class="btn btn-light action-button" role="button" href="#">Action </a></div>
         </div>
     </nav>
-    <div class="card">
-        <div class="card-body">
-            <h4 class="card-title">Title</h4>
-            <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
-            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><a class="card-link" href="#">Link</a><a class="card-link" href="#">Link</a></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Article</h1>
+                <form>
+                    <div class="form-group"><label>Title</label><input class="form-control" type="text" placeholder="Title"></div>
+                    <div class="form-group"><label>Text</label><textarea class="form-control" placeholder="Article text Here" rows="5"></textarea></div><button class="btn btn-light" type="button">Submit</button></form>
+            </div>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
