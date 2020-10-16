@@ -8,6 +8,7 @@ app.config['SECRET_KEY'] = 'super duper secret key'
 #           Flask Routes           #
 ####################################
 
+
 @app.route('/', strict_slashes=False)
 @app.route('/index', strict_slashes=False)
 @app.route('/home', strict_slashes=False)
