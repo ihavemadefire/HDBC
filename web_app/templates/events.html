@@ -1,11 +1,79 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="card">
-        <h1>Events</h1>
+<div class=container>
+    <h1 class="text-center">Events</h1>
+    <div class="card mb-2">
         <div class="card-body">
-            <h4 class="card-title">Title</h4>
-            <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
-            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><a class="card-link" href="#">Link</a><a class="card-link" href="#">Link</a></div>
+            <div class="row">
+                <div class="col-9" style="border-right: 1px solid #ccc;">
+                    <h1 class="card-title oktober">Oktoberfest Cookoff</h1>
+                    <h3 class="text-muted card-subtitle mb-2">Celebrate Oktoberfest with our own Geman food cookout</h3>
+                    <hr>
+                    <p class="card-text event-text">Join the Tulsa campus Database Club for a day of bratwurst, kraut, and spetzle as we say Jawhol to Oktoberfest with our neighbours Welltown brewing. No beer on campus (sorry) but feel free to load up a plate and come and go! Get ready to SELECT * FROM food_heavy and INNER JOIN the chicken_dance table.</p>
+                    <small><strong>Location: </strong> Tulsa Campus 15 N. Cheyenne Ave. Tulsa, OK <a href="https://www.google.com/maps/place/Holberton+School+Tulsa/@36.1562827,-95.9970609,820m/data=!3m1!1e3!4m5!3m4!1s0x87b6eb3856fbdd39:0xf730ddf2649d5543!8m2!3d36.1562827!4d-95.9948669?hl=en">Directions</a></small><br>
+                    <small><strong>Time: </strong>October 24th, 2020 11:00 am - 4 pm</small><br>
+                    <a class="card-link" href="#">Contact/Volunteer</a>
+                </div>
+                <div class="col-3 justify-content-center align-self-center">
+                    <img class="img-fluid align-self-center" src="{{url_for('static',filename='img/welltown.png')}}" alt="">
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="card mb-2">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-9" style="border-right: 1px solid #ccc;">
+                    <h1 class="card-title franks">Halloween on Wooster</h1>
+                    <h3 class="text-muted card-subtitle mb-2">Get Spooky with Pizza and Data on Halloween Night</h3>
+                    <hr>
+                    <p class="card-text event-text">The new Haven Campus Database Club is holding a social event on Halloween at Frank Pepe's. Best Database-themed costume wins a round on the club. Space is limited so make sure to RSVP.</p>
+                    <small><strong>Location: </strong> Frank Pepe's 127 Wooster St. New Haven, CT  <a href="https://www.google.com/maps/place/Frank+Pepe+Pizzeria+Napoletana/@41.3029876,-72.9179393,347m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89e7d8348404486b:0x791f5eef0a1b45fa!8m2!3d41.3029876!4d-72.9169419?hl=en">Directions</a></small><br>
+                    <small><strong>Time: </strong>October 31st, 2020 7:30 pm - 9:30 pm est</small><br>
+                    <a class="card-link" href="#">Contact</a>
+                </div>
+                <div class="col-3 justify-content-center align-self-center">
+                    <img class="img-fluid align-self-center" src="{{url_for('static',filename='img/Pepe.jpg')}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="card mb-2">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-9" style="border-right: 1px solid #ccc;">
+                    <h2 class="card-title">Winter miniconference</h2>
+                    <h6 class="text-muted card-subtitle mb-2">Biannual one day mini-conference</h6>
+                    <hr>
+                    <p class="card-text event-text">All campus chapters of the database club will have their twice annual meeting to present topics. The conference will be streamed entirely via the database club <a href="{{url_for('hdbc')}}">homepage</a>. If attendees are on campus, there will be standard conference snacks available. </p>
+                    <ul>
+                        <li>9:00 - 9:15: Introductions</li>
+                        <li>9:15 - 9:30: (New Haven) John Kryzbek - Cracking DNA and data storage <a href="">More</a></li>
+                        <li>9:30 - 9:45: (Puerto Rico) J. I. Cruz Ruiz - Working With Unbounded Data Sets <a href="">More</a></li>
+                        <li>9:45 - 10:00: (Tunisa) Jean de Richaud - SQL vs. NoSQL databases <a href="">More</a></li>
+                        <li>10:00 - 10:15: (Uraguay) J. A. Thomas - Decolonizing the data <a href="">More</a></li>
+                        <li>10:15 - 10:30: (France) Michel Guichet - The Coming Data Storage Crunch <a href="">More</a></li>
+                        <li>10:30 - 10:45: (Mexico City) G. G. Bernal - Database Optimization for the 21st Century <a href="">More</a></li>
+                        <li>10:45 - 11:00: (Cali) J. Hernandez - Gender Bias in Large Data Sets  <a href="">More</a></li>
+                        <li>11:00 - 11:15: (Beruit) M. Khalil - Meet the newest colmun data type: the Braj <a href="">More</a></li>
+                        <li>11:15 - 11:30: (San Francisco) Tabatha O'Melay - 5 essential skills for any DBA <a href="">More</a></li>
+                        <br>
+                        <li>11:30 - 1:00 <strong>Lunch</strong></li>
+                        <br>
+                        <li>1:00 - 2:00 <strong>Keynote</strong> Interview with James Erstholzt, Exec. VP Data Storage, Quizbl Data</li>
+                        <li>2:00 - 2:45 Q&A with all presentors</li>
+                        <li>2:45 - 3:00 Wrap up</li>
+                    </ul>
+                    <small><strong>Location: </strong> Virtual and streaming on each campus (all times CST, -6 GMT)</small><br>
+                    <small><strong>Time: </strong>November  23rd, 2020 9:00 am - 11:30; 1:00 - 3:00 pm</small><br>
+                    <a class="card-link" href="#">Contact</a>
+                </div>
+                <div class="col-3 justify-content-center align-self-center">
+                    <img class="img-fluid align-self-center" src="{{url_for('static',filename='img/DB_club_small.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

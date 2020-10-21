@@ -4,8 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>index</title>
+    <title>Holberton Database Club</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href={{ url_for('static', filename='css/style.css')}}>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Germania+One&display=swap" rel="stylesheet">
 </head>
 
 <body style="margin-top: 10px;">
@@ -21,8 +23,6 @@
                         <li class="nav-item"><a class="nav-link" href="{{url_for('articles')}}">Articles</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{url_for('events')}}">Events</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{url_for('about')}}">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{url_for('profile')}}">My Account</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{url_for('login')}}">Login</a></li>
                     </ul>
                     <form class="form-inline mr-auto" target="_self">
                         <div class="form-group"><label for="search-field"></label></div>
@@ -31,7 +31,9 @@
         </nav>
     </div>
     {% block content %}{% endblock %}
-    <footer></footer>
+    <footer class="text-center">
+        <small >Copyright HDBC 2020</small>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
