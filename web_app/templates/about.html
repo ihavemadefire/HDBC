@@ -1,10 +1,297 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="container">
+<h1 class="display-1 mb-4 text-center">About Us</h1>
+<div class="container">
+    <section id="about-main" class="mb-5">
         <div class="jumbotron">
-            <h1>About Us</h1>
-            <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-            <p><a class="btn btn-primary" role="button">Learn more</a></p>
+            <h4 class="display-4 text-center mb-3">What is the Holberton Database Club?</h4>
+            <hr>
+            <p class="text-center about-p-bold">The Holberton Database Club is a student club at Holberton School composed of like-minded data storage enthusiasts</p>
+            <hr>
+            <p class="about-p text-justify">Who doesn't love data? We know we do.  That's why we formed the Holberton Database Club.  The club allows members and non-members to get geeky about data. The club hosts talks, social events, interviews with local professionals, and hack days.</p>
+            <div class="row">
+                <div class="text-center about-links col-sm-3"><a href="#about-main">About</a></div>
+                <div class="text-center about-links col-sm-3"><a href="#officers">Officers</a></div>
+                <div class="text-center about-links col-sm-3"><a href="#members">Members</a></div>
+                <div class="text-center about-links col-sm-3"><a href="">Other</a></div>
+            </div>
         </div>
-    </div>
+        <ul class="nav bg-dark justify-content-center rounded">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about-main">Main</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#bylaws">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#officers">Organziation and Bylaws</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Current Officers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#members">Members</a>
+            </li>
+            <li class="nav-item text-white">
+                <a class="nav-link text-white" href="#contribute">Contribute!</a>
+            </li>
+        </ul>
+    </section>
+    <section id="bylaws" class="p-5 mb-5 border border-danger rounded">
+        <h1 class="text-center mb-4 display-3">Organization and Bylaws</h1>
+        <p class="lead text-center">While too many rules can strangle an Organization, we felt it best to a lay down some organizing rules and a few guiding princples.</p>
+        <hr>
+        <p class="about-p-bold text-center"><u>Chapters</u></p>
+        <p class="about-p text-center">Each campus's chapter opporates independently as regards events and chapter meetings.  This allows for more flexibily around meeting time and allows for a greater diversity of topics pursued. Each campus chapter can have their own rules and officers.</p>
+        <hr>
+        <hr>
+        <p class="about-p-bold text-center"><u>Officer duties</u></p>
+        <p class="about-p text-center">Don't get too excited.  It's more work than prestige.</p>
+        <p class="about-p text-center">Officers are in charge of reviewing submitted articles, maintaining the code base for this page (including managing contibuters pull requests, et.c.), planning and setting up an club-wide events.</p>
+        <hr>
+        <p class="about-p-bold text-center"><u>Resarch Topics and Articles</u></p>
+        <p class="about-p text-center">If you've got something cool you've found a topic you want to develop into a an article, that's awesome! The general process for getting it published in the articles page of this website is as follows:</p>
+        <div class="list-row">
+                <ol>
+                    <li class="about-p">Read about it</li>
+                    <li class="about-p">Discuss it with peers</li>
+                    <li class="about-p">Write about it</li>
+                    <li class="about-p">Submit it to a club officer</li>
+                    <li class="about-p">Club Officers will give editorial notes and/or approve</li>
+                    <li class="about-p">The article is published to the website</li>
+                    <li class="about-p">Share with everyone you know</li>
+                    <li class="about-p">Brag that you're published to absolutely everyone you know</li>
+                </ol>
+
+        </div>
+        <p class="about-p text-center">Topics can be nearly anything as long as they tie into data, data storage, or some adjacent topic</p>
+        <hr>
+        <p class="about-p-bold text-center"><u>Club-Wide Events</u></p>
+        <p class="about-p text-center">About twice a year, the club will put together an event that will involve all the chapters across the world. This might take the form aof a hack day or a mini-conference. Watch the events page for details.</p>
+        <hr>
+        <p class="about-p-bold text-center"><u>Attitude and Demenor</u></p>
+        <p class="about-p text-center">Don't be a jerk!</p>
+        <p class="about-p text-center">Holberton is a worldwide network of campuses. While it should go without saying, we will reaffirm that</p>
+        <p class="about-p-bold text-center">bullying, insults, or any kind of discrmintory language will not be tolerated</p>
+        <p class="about-p text-center">and any reported incidents will be reported to campus staff.</p>
+    </section>
+    <section id="officers" class="mb-5">
+        <h1 class="text-center mb-4 display-3">Current Officers</h1>
+        <div class="row d-flex justify-content-between">
+            <figure class="figure"><img class="rounded-circle figure-img" src="{{url_for('static',filename='img/0.jpg')}}" />
+                <figcaption class="figure-caption" style="text-align: center;">Tony Sims | Tulsa | Officer-at-Large</figcaption>
+            </figure>
+            <figure class="figure"><img class="rounded-circle figure-img" src="{{url_for('static',filename='img/Tabs-300x300.jpg')}}" />
+                <figcaption class="figure-caption" style="text-align: center;">Tabitha O&#39;Melay | San Fransisco | Vice President</figcaption>
+            </figure>
+            <figure class="figure"><img class="rounded-circle figure-img" src="{{url_for('static',filename='img/jacob-300x300.jpg')}}" />
+                <figcaption class="figure-caption" style="text-align: center;">Jacob Ide | Tulsa | President</figcaption>
+            </figure>
+        </div>
+        <div class="d-flex justify-content-between justify-content-xl-center" style="margin: 40px;">
+            <figure class="figure"><img class="rounded-circle figure-img" src="{{url_for('static',filename='img/Derek-300x300.jpg')}}" />
+                <figcaption class="figure-caption" style="text-align: center;">Derek Webb| Tulsa | Staff Sponsor</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section id="members" class="mb-5">
+        <h1 class="text-center mb-4 display-3">Members</h1>
+        <ul class="list-group mb-4">
+            <li class="list-group-item">
+                <div class="d-flex justify-content-around">
+                    <h3 class="my-auto">San Francisco</h3>
+                    <img src="{{url_for('static',filename='img/sf-icon.png')}}"></img>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="my-auto">Tabitha O'Melay<span class="ml-2 badge badge-info">Vice President</span></h4>
+                    <div class="d-flex justify-content-around">
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="my-auto">Frank Bullitt</h4>
+                    <div class="d-flex justify-content-around">
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="my-auto">Martin Bishop</h4>
+                    <div class="d-flex justify-content-around">
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="my-auto">Sam Spade</h4>
+                    <div class="d-flex justify-content-around">
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="list-group mb-4">
+            <li class="list-group-item">
+                <div class="d-flex justify-content-around">
+                    <h3 class="my-auto">Tulsa</h3>
+                    <img src="{{url_for('static',filename='img/tulsa.png')}}"></img>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="my-auto">Jacob Ide<span class="ml-2 badge badge-info">President</span></h4>
+                    <div class="d-flex justify-content-around">
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="my-auto">Tony Sims<span class="ml-2 badge badge-info">Officer-at-Large</span></h4>
+                    <div class="d-flex justify-content-around">
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="my-auto">R J Fletcher</h4>
+                    <div class="d-flex justify-content-around">
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="my-auto">Corbin Enterline</h4>
+                    <div class="d-flex justify-content-around">
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </li>
+        </ul><ul class="list-group mb-4">
+            <li class="list-group-item">
+                <div class="d-flex justify-content-around">
+                    <h3 class="my-auto">France</h3>
+                    <img src="{{url_for('static',filename='img/france.png')}}"></img>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="my-auto">Charles De Gaulle</h4>
+                    <div class="d-flex justify-content-around">
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="my-auto">Paul Bocuse</h4>
+                    <div class="d-flex justify-content-around">
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="my-auto">Victor Hugo</h4>
+                    <div class="d-flex justify-content-around">
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="my-auto">Julien Ide</h4>
+                    <div class="d-flex justify-content-around">
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                        <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    <ul class="list-group mb-4">
+    <li class="list-group-item">
+        <div class="d-flex justify-content-around">
+            <h3 class="my-auto">Uraguay</h3>
+            <img src="{{url_for('static',filename='img/Uraguay.png')}}"></img>
+        </div>
+    </li>
+    <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+            <h4 class="my-auto">Diego Forlan</h4>
+            <div class="d-flex justify-content-around">
+                <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </li>
+    <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+            <h4 class="my-auto">Jorge Drexler</h4>
+            <div class="d-flex justify-content-around">
+                <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </li>
+    <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+            <h4 class="my-auto">Ruben Rada</h4>
+            <div class="d-flex justify-content-around">
+                <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </li>
+    <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+            <h4 class="my-auto">Mario Benedetti</h4>
+            <div class="d-flex justify-content-around">
+                <a class="text-dark" href="#"><i class="mr-2 fab fa-github-square fa-2x"></i></a>
+                <a class="text-dark" href="#"><i class="mr-2 far fa-envelope fa-2x"></i></a>
+                <a class="text-dark" href="#"><i class="mr-2 fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </li>
+</ul>
+    </section>
+    <section id="contribute" class="p-5 border border-success rounded">
+        <h1 class="text-center mb-4 display-3">Contribute To This Page</h1>
+        <p class="about-p text-justify">This page is the product of student collaboration. If you want to contribute to the code base or just have a fun idea about additional functionality, reach out to a club officer on slack and they will invite you as a collaborator. Send any requests to the club email address at contribute@holbertondatabaseclub.com.com</p>
+        <p class="about-p">This is a living document that it meant to be iterative. Each cohort can add and change it as they see fit.  Talk to your staff member to see if contirubting to this or any other club website can be used as a final project for Foundations or Specialization.</p>
+    </section>
+</div>
 {% endblock %}
