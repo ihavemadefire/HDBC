@@ -35,3 +35,39 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
+.article-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+
+}
+.article-sub-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 32px;
+}
+
+footer {
+    min-height: 100px;
+    background-color: antiquewhite;
+}
+
+.about-jumbo{
+    background-image: url("../img/cardcat.jpg");
+    background-size: cover;
+}
+
+.jumbo-text {
+    background: rgba(255,255,255,0.85);
+}
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+.carousel-item {
+    height: 400px;
+}
+
+.index-blerb {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}

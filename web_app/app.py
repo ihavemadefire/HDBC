@@ -50,5 +50,9 @@ def editprofile():
 @app.route('/profile', strict_slashes=False)
 def profile():
     return render_template('profile.html')
+
+@app.route('/blog', strict_slashes=False)
+def blog():
+    return render_template('blog.html')
 if __name__ == "__main__":
     app.run(debug=True)

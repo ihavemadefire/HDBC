@@ -1,13 +1,109 @@
 {% extends "base.html" %}
 {% block content %}
 <dir class="container">
-    <section>
+    <section id="welcome">
         <article class="d-flex d-xl-flex flex-column justify-content-xl-center">
-            <div class="jumbotron">
-                <h5>Featured Article</h5>
-                <h1>MongoDB vs. mySQL: Pros and Cons</h1><small>By Tabitha O'Melay</small>
-                <p class="test">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                <p><a class="btn btn-primary" role="button">Learn more</a></p>
+            <h1 class="display-2 text-center">Welcome</h1>
+            <div class="jumbotron rounded about-jumbo">
+                <h1 class="text-center rounded jumbo-text text-black display-4">Holberton Database Club</h1>
+                <p class="text-center p-5 rounded jumbo-text text-black index-blerb">Welcome to the homepage the Holberton Database club. We're students, faculty, and alumni of Holberton school that love to get geeky about data. We have campus chapters in 5 countries and grow every year.</p>
+                <div class="container rounded jumbo-text p-4">
+                    <div class="text-center">
+                        <h1 class="text-center mb-4 display-4 text-black"> Find out more </h1>
+                        <a href="{{url_for('about')}}"type="button" class="btn btn-danger">About Us</a>
+                    </div>
+    
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="featured_article">
+        <article class="d-flex d-xl-flex flex-column justify-content-xl-center">
+            <h1 class="display-3 text-center">Featured Article</h1>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-9" style="border-right: 1px solid #ccc;">
+                            <h2 class="card-title">Working With Unbounded Data Sets</h2>
+                            <h4 class="text-muted card-subtitle mb-2">Breaking Down NASA's Big Numbers</h4>
+                            <h6>J. I. Cruz Ruiz | Puerto Rico </h6>
+                            <p>October 7th, 2020</p>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                            <a class="card-link" href="{{url_for('article')}}">Read More</a><a class="card-link" href="{{url_for('articles')}}">All articles</a>
+                        </div>
+                        <div class="col-3 justify-content-center align-self-center">
+                            <img class="img-fluid align-self-center" src="{{url_for('static',filename='img/nasa.jpg')}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="events" class="mb-4">
+        <h1 class="display-2 mb-4 text-center">Events</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-4" style="border-right: 1px solid #ccc;">
+                        <h1 class="oktober mt-4 mb-3 text-center">Oktoberfest Cookoff</h1>
+                        <h3 class="text-muted card-subtitle mb-2">Celebrate Oktoberfest with our own Geman food cookout</h3>
+                        <a class="card-link" href="{{url_for('events')}}">More info</a>
+                    </div>
+                    <div class="col-4 justify-content-center align-self-center">
+                        <img class="img-fluid align-self-center" src="{{url_for('static',filename='img/welltown.png')}}" alt="">
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-4" style="border-right: 1px solid #ccc;">
+                        <h1 class="franks mt-4 mb-3 text-center">Halloween on Wooster</h1>
+                        <h3 class="text-muted card-subtitle mb-2">Get spooky at Frank Pepe's in New Haven</h3>
+                        <a class="card-link" href="{{url_for('events')}}">More info</a>
+                    </div>
+                    <div class="col-4 justify-content-center align-self-center">
+                        <img class="img-fluid height align-self-center" src="{{url_for('static',filename='img/Pepe.jpg')}}" alt="">
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-4" style="border-right: 1px solid #ccc;">
+                        <h1 class="mt-4 text-center">Winter Mini-conference</h1>
+                        <h3 class="text-muted card-subtitle mb-2">Presentation of Articles for the year</h3>
+                        <a class="card-link" href="{{url_for('events')}}">More info</a>
+                    </div>
+                    <div class="col-4 justify-content-center align-self-center">
+                        <img class="img-fluid align-self-center" src="{{url_for('static',filename='img/DB_club_small.png')}}" alt="">
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section>
+    <section id="new">
+        <article class="d-flex d-xl-flex flex-column justify-content-xl-center">
+            <div class="container rounded bg-dark p-4">
+                <div class="text-center">
+                    <h1 class="text-center mb-4 text-white">See what's new in our DevBlog</h1>
+                    <button type="button" class="btn btn-danger">DevBlog</button>
+                </div>
+
             </div>
         </article>
     </section>

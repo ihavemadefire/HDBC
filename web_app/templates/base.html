@@ -11,29 +11,33 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
-<body style="margin-top: 10px;">
-    <div class="container d-lg-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="background: url(&quot;static/img/database-770x481.jpeg&quot;) no-repeat;filter: blur(0px);background-size: cover;">
-        <section style="margin: 25px;"><img class="d-lg-flex justify-content-lg-center mx-auto" src="static/img/DB_club_small.png" style="padding: 0px;border-radius: 300px;box-shadow: 4px 4px 9px 4px rgb(0,25,88), -4px -4px 9px 4px rgb(0,25,88);"></section>
-    </div>
+<body class="mt-3">
     <div class="container" style="margin-top: 3px;padding-right: 0px;padding-left: 0px;">
-        <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
-            <div class="container"><a class="navbar-brand" href="{{url_for('hdbc')}}">HBNB</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <nav class="navbar sticky-top navbar-light bg-white navbar-expand-md navigation-clean-search">
+            <div class="container"><a class="navbar-brand" href="{{url_for('hdbc')}}"><img src="static/img/DB_club_logo.png" alt=""></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse"
                     id="navcol-1">
                     <ul class="nav navbar-nav d-lg-flex ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('hdbc')}}">Main</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{url_for('articles')}}">Articles</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{url_for('events')}}">Events</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{url_for('about')}}">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('blog')}}">Dev Blog</a></li>
                     </ul>
                     <form class="form-inline mr-auto" target="_self">
                         <div class="form-group"><label for="search-field"></label></div>
-                    </form><i class="fa fa-search mr-2"></i><input type="search" id="search-field" class="search-field" name="search"><a class="btn btn-light action-button" role="button" href="#">Search</a></div>
+                    </form><i class="fa fa-search mr-2"></i><input type="search" id="search-field" class="search-field mr-2" name="search"><a class="btn btn-light action-button" role="button" href="#">Search</a></div>
             </div>
         </nav>
+    <div class="container d-lg-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="background: url(&quot;static/img/database-770x481.jpeg&quot;) no-repeat;filter: blur(0px);background-size: cover;">
+        <section style="margin: 25px;"><img class="d-lg-flex justify-content-lg-center mx-auto" src="static/img/DB_club_small.png" style="padding: 0px;border-radius: 300px;box-shadow: 4px 4px 9px 4px rgb(0,25,88), -4px -4px 9px 4px rgb(0,25,88);"></section>
     </div>
+
     {% block content %}{% endblock %}
-    <footer class="text-center">
-        <small >Copyright HDBC 2020</small>
+    <footer class="text-center d-flex align-items-center justify-content-center">
+        <small >&copy;<script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script> Holberton Database Club</small> 
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
