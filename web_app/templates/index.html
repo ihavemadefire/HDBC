@@ -24,15 +24,15 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-9" style="border-right: 1px solid #ccc;">
-                            <h2 class="card-title">Working With Unbounded Data Sets</h2>
-                            <h4 class="text-muted card-subtitle mb-2">Breaking Down NASA's Big Numbers</h4>
-                            <h6>J. I. Cruz Ruiz | Puerto Rico </h6>
-                            <p>October 7th, 2020</p>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                            <a class="card-link" href="{{url_for('article')}}">Read More</a><a class="card-link" href="{{url_for('articles')}}">All articles</a>
+                            <h2 class="card-title">{{fa.title}}</h2>
+                            <h4 class="text-muted card-subtitle mb-2">{{fa.subtitle}}</h4>
+                            <h6>{{fa.author}} </h6>
+                            <p>{{fa.date}}</p>
+                            <p class="card-text">{{fa.summary}}</p>
+                            <a class="card-link" href="{{url_for('article', n=1)}}">Read More</a><a class="card-link" href="{{url_for('articles')}}">All articles</a>
                         </div>
                         <div class="col-3 justify-content-center align-self-center">
-                            <img class="img-fluid align-self-center" src="{{url_for('static',filename='img/nasa.jpg')}}" alt="">
+                            <img class="img-fluid align-self-center" src="{{url_for('static',filename='img/1.jpg')}}" alt="">
                         </div>
                     </div>
                 </div>
