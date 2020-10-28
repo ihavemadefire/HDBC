@@ -27,7 +27,7 @@
                             <h2 class="card-title">{{fa.title}}</h2>
                             <h4 class="text-muted card-subtitle mb-2">{{fa.subtitle}}</h4>
                             <h6>{{fa.author}} </h6>
-                            <p>{{fa.date}}</p>
+                            <p>{{fa.date.strftime('%B %d, %Y')}}</p>
                             <p class="card-text">{{fa.summary}}</p>
                             <a class="card-link" href="{{url_for('article', n=1)}}">Read More</a><a class="card-link" href="{{url_for('articles')}}">All articles</a>
                         </div>
