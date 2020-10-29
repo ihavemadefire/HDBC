@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<dir class="container">
+<div class="container">
     <section id="welcome">
         <article class="d-flex d-xl-flex flex-column justify-content-xl-center">
             <h1 class="display-2 text-center">Welcome</h1>
@@ -23,15 +23,15 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-9" style="border-right: 1px solid #ccc;">
+                        <div class="col-md-9" style="border-right: 1px solid #ccc;">
                             <h2 class="card-title">{{fa.title}}</h2>
                             <h4 class="text-muted card-subtitle mb-2">{{fa.subtitle}}</h4>
                             <h6>{{fa.author}} </h6>
                             <p>{{fa.date.strftime('%B %d, %Y')}}</p>
                             <p class="card-text">{{fa.summary}}</p>
-                            <a class="card-link" href="{{url_for('article', n=1)}}">Read More</a><a class="card-link" href="{{url_for('articles')}}">All articles</a>
+                            <a class="btn btn-primary mb-2 card-link" href="{{url_for('article', n=1)}}">Read More</a><a class="btn btn-primary mb-2 card-link" href="{{url_for('articles')}}">All articles</a>
                         </div>
-                        <div class="col-3 justify-content-center align-self-center">
+                        <div class="col-md-3 mt-md-2 justify-content-center align-self-center">
                             <img class="img-fluid align-self-center" src="{{url_for('static',filename='img/1.jpg')}}" alt="">
                         </div>
                     </div>
@@ -46,12 +46,12 @@
               <div class="carousel-item active">
                 <div class="row">
                     <div class="col-2"></div>
-                    <div class="col-4" style="border-right: 1px solid #ccc;">
+                    <div class="col-md-4" style="border-right: 1px solid #ccc;">
                         <h1 class="oktober mt-4 mb-3 text-center">Oktoberfest Cookoff</h1>
                         <h3 class="text-muted card-subtitle mb-2">Celebrate Oktoberfest with our own Geman food cookout</h3>
-                        <a class="card-link" href="{{url_for('events')}}">More info</a>
+                        <a class="btn btn-primary mb-2 card-link" href="{{url_for('events')}}">More info</a>
                     </div>
-                    <div class="col-4 justify-content-center align-self-center">
+                    <div class="col-md-4 justify-content-center align-self-center">
                         <img class="img-fluid align-self-center" src="{{url_for('static',filename='img/welltown.png')}}" alt="">
                     </div>
                     <div class="col-2"></div>
@@ -60,12 +60,12 @@
               <div class="carousel-item">
                 <div class="row">
                     <div class="col-2"></div>
-                    <div class="col-4" style="border-right: 1px solid #ccc;">
+                    <div class="col-md-4" style="border-right: 1px solid #ccc;">
                         <h1 class="franks mt-4 mb-3 text-center">Halloween on Wooster</h1>
                         <h3 class="text-muted card-subtitle mb-2">Get spooky at Frank Pepe's in New Haven</h3>
-                        <a class="card-link" href="{{url_for('events')}}">More info</a>
+                        <a class="card-link btn btn-primary mb-2" href="{{url_for('events')}}">More info</a>
                     </div>
-                    <div class="col-4 justify-content-center align-self-center">
+                    <div class="col-md-4 justify-content-center align-self-center">
                         <img class="img-fluid height align-self-center" src="{{url_for('static',filename='img/Pepe.jpg')}}" alt="">
                     </div>
                     <div class="col-2"></div>
@@ -74,13 +74,13 @@
               <div class="carousel-item">
                 <div class="row">
                     <div class="col-2"></div>
-                    <div class="col-4" style="border-right: 1px solid #ccc;">
+                    <div class="col-md-4" style="border-right: 1px solid #ccc;">
                         <h1 class="mt-4 text-center">Winter Mini-conference</h1>
                         <h3 class="text-muted card-subtitle mb-2">Presentation of Articles for the year</h3>
-                        <a class="card-link" href="{{url_for('events')}}">More info</a>
+                        <a class="card-link btn btn-primary mb-2" href="{{url_for('events')}}">More info</a>
                     </div>
-                    <div class="col-4 justify-content-center align-self-center">
-                        <img class="img-fluid align-self-center" src="{{url_for('static',filename='img/DB_club_small.png')}}" alt="">
+                    <div class="col-md-4 justify-content-center align-self-center">
+                        <img style="object-fit: fill;" class="img-fluid align-self-center" src="{{url_for('static',filename='img/DB_club_small.png')}}" alt="">
                     </div>
                     <div class="col-2"></div>
                 </div>
